@@ -1,0 +1,53 @@
+/* pages/Home.module.css */
+.main {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* // */
+/* pages/LandingPage.module.css */
+.main {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Default to 2 columns on small screens */
+  gap: 20px;
+  justify-items: center;
+}
+
+.imageItem {
+  width: 100%; /* Ensure images scale responsively */
+}
+
+@media (min-width: 768px) {
+  .imageGrid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+  }
+}
