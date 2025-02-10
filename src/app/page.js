@@ -30,16 +30,17 @@ const imageData = [
 
 const Home = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Head>
-        <title>Next.js Landing Page</title>
+        <link rel="icon" href="/food-lion.png" type="image/png" />
+
         <meta
           name="description"
           content="A simple Next.js app with header, footer, and landing page."
         />
       </Head>
       <Header />
-      <main className={styles.main}>
+      <main className={`bg-gray-300 flex-grow ${styles.main}`}>
         {/* <h1 className={styles.title}>Welcome to Our Landing Page</h1> */}
         <p className={styles.description}>
           Food Lion is widely recognized for its supermarkets, which offer a
@@ -63,7 +64,7 @@ const Home = () => {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
